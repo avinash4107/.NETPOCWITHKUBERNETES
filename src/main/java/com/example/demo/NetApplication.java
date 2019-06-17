@@ -23,13 +23,7 @@ public class NetApplication {
 
 	}
 	
-	//docker ps for list down what are all containers running
-	//docker exec -it names /bin/bash to check what are there in image
-	//docker run -d -p 8080:8080 imagename to run image in detached mode[like deamon thread] once system shutdown it will stop
-	//docker run -p 8080:8080 imagename to run image in attached mode[] once server stop it will shutdown
-    //docker stop names to stop particular image
-	//docker rm names names names ====>to remove images for container
-
+	
 	@GetMapping
 	public String createNetProject(@RequestParam("projectType") String projectType,
 			@RequestParam("projectName") String projectName) throws URISyntaxException, GitAPIException {
